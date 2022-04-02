@@ -23,7 +23,7 @@ today = date.today()
 ########################################################################################################################
 rand_number = random.randint(1, 99999)
 ########################################################################################################################
-main_path = 'D:/Program Files (x86)/Cryptical/log'
+main_path = 'D:/The Code Base App Data/Utility-Software/log'
 is_main_path = os.path.isdir(main_path)
 if is_main_path == True:
     path = f'D:/The Code Base App Data/Utility-Software/log/Log--{today}'
