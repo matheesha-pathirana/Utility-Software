@@ -26,22 +26,21 @@ rand_number = random.randint(1, 99999)
 main_path = 'D:/Program Files (x86)/Cryptical/log'
 is_main_path = os.path.isdir(main_path)
 if is_main_path == True:
-    path = f'D:/Program Files (x86)/Cryptical/log/Log--{today}'
+    path = f'D:/The Code Base App Data/Utility-Software/log/Log--{today}'
     isFile = os.path.isdir(path)
     if isFile == True:
-        f = open(f'D:/Program Files (x86)/Cryptical/log/Log--{today}/Log--{time_now}--{rand_number}.txt', 'w+')
+        f = open(f'D:/The Code Base App Data/Utility-Software/log/Log--{today}/Log--{time_now}--{rand_number}.txt', 'w+')
         f.write(f'{time_now}--Creating Log Folders...!\n')
         f.write(f'{time_now}--Success!!\n')
     else:
-        os.mkdir(f'D:/Program Files (x86)/Cryptical/log/Log--{today}')
+        os.mkdir(f'D:/The Code Base App Data/Utility-Software/log/Log--{today}')
         f = open(f'log/Log--{today}/Log--{time_now}--{rand_number}.txt', 'w+')
         f.write(f'{time_now}--Creating Log Folders...!\n')
         f.write(f'{time_now}--Success!!\n')
 else:
-    os.mkdir('D:/Program Files (x86)/Cryptical')
-    os.mkdir('D:/Program Files (x86)/Cryptical/log')
-    os.mkdir(f'D:/Program Files (x86)/Cryptical/log/Log--{today}')
-    f = open(f'D:/Program Files (x86)/Cryptical/log/Log--{today}/Log--{time_now}--{rand_number}.txt', 'w+')
+    os.mkdir('D:/The Code Base App Data/Utility-Software/log')
+    os.mkdir(f'D:/The Code Base App Data/Utility-Software/log/Log--{today}')
+    f = open(f'D:/The Code Base App Data/Utility-Software/log/Log--{today}/Log--{time_now}--{rand_number}.txt', 'w+')
     f.write(f'{time_now}--Creating Log Folders...!\n')
     f.write(f'{time_now}--Success!!\n')
 ########################################################################################################################
