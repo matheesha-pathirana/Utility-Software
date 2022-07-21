@@ -25,10 +25,10 @@ rand_number = random.randint(1, 99999)
 ########################################################################################################################
 main_path = 'D:/Program Files (x86)/Cryptical/log'
 is_main_path = os.path.isdir(main_path)
-if is_main_path == True:
+if is_main_path is True:
     path = f'D:/Program Files (x86)/Cryptical/log/Log--{today}'
     isFile = os.path.isdir(path)
-    if isFile == True:
+    if isFile is True:
         f = open(f'D:/Program Files (x86)/Cryptical/log/Log--{today}/Log--{time_now}--{rand_number}.txt', 'w+')
         f.write(f'{time_now}--Creating Log Folders...!\n')
         f.write(f'{time_now}--Success!!\n')
