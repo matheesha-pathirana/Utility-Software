@@ -1,4 +1,5 @@
 import os
+import sys
 import time
 import requests
 
@@ -16,4 +17,4 @@ try:
 
 except requests.exceptions.ConnectionError:
     input('You Need an Internet Connection!\npress enter to exit\n')
-    exit()
+    sys.exit()

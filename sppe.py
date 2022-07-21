@@ -3,6 +3,7 @@ import datetime as datetime
 import shutil
 import random2
 import random
+import sys
 import time
 import urllib
 import ipinfo
@@ -70,7 +71,7 @@ except ImportError:
     if nointernet == 1:
         input('You need an internet connection to install\n')
         f.write(f"{time_now}--Couldn't Connect To The Internet!\n")
-        exit()
+        sys.exit()
 
     else:
         os.system('pip install time')
@@ -86,7 +87,7 @@ except ImportError:
     if nointernet == 1:
         input('You need an internet connection to install\n')
         f.write(f"{time_now}--Couldn't Connect To The Internet!\n")
-        exit()
+        sys.exit()
 
     else:
         os.system('pip install random2')
@@ -727,7 +728,7 @@ while True:
                             # shutil.move(
                             #     f"D:/OneDrive - adithya/Programming/Python/Utility Software/log/Log_{today}_{rand_number}.txt",
                             #     f"D:/Program Files (x86)/Cryptical/log/Log_{today}_{rand_number}/Log_{today}_{rand_number}")
-                            exit()
+                            sys.exit()
                         ########################################################################################################################
                         else:
                             print(idk)
@@ -744,7 +745,7 @@ while True:
         # f.close()
         # shutil.move(f"D:/OneDrive - adithya/Programming/Python/Utility Software/log/Log_{today}_{rand_number}.txt",
         #             f"D:/Program Files (x86)/Cryptical/log/Log_{today}_{rand_number}/Log_{today}_{rand_number}")
-        exit()
+        sys.exit()
     ########################################################################################################################
     else:
         print(f'\n\n{idk}\n\n')
