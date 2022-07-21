@@ -376,11 +376,10 @@ while True:
                                     x = False
                                     box = messagebox.showinfo("Tie Game", "Tie Game")
                                     f.write(f"{time_now}--Tie game!\n")
-                                if (x):
-                                    if sign % 2 != 0:
-                                        move = pc()
-                                        button[move[0]][move[1]].config(state=DISABLED)
-                                        get_text_pc(move[0], move[1], gb, l1, l2)
+                                if (x) and sign % 2 != 0:
+                                    move = pc()
+                                    button[move[0]][move[1]].config(state=DISABLED)
+                                    get_text_pc(move[0], move[1], gb, l1, l2)
 
 
                             def gameboard_pc(game_board, l1, l2):
