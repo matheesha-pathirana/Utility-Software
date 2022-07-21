@@ -1,20 +1,17 @@
 import os
-import datetime as datetime
-import shutil
-import random2
 import random
 import sys
 import time
 import urllib
-import ipinfo
-import requests
-import speedtest
-from tkinter import *
+from copy import deepcopy
+from datetime import date
+from datetime import datetime
 from functools import partial
 from tkinter import messagebox
-from copy import deepcopy
-from datetime import datetime
-from datetime import date
+
+import ipinfo
+import random2
+import requests
 
 ########################################################################################################################
 now = datetime.now()
@@ -30,7 +27,8 @@ if is_main_path == True:
     path = f'D:/The Code Base App Data/Utility-Software/log/Log--{today}'
     isFile = os.path.isdir(path)
     if isFile == True:
-        f = open(f'D:/The Code Base App Data/Utility-Software/log/Log--{today}/Log--{time_now}--{rand_number}.txt', 'w+')
+        f = open(f'D:/The Code Base App Data/Utility-Software/log/Log--{today}/Log--{time_now}--{rand_number}.txt',
+                 'w+')
         f.write(f'{time_now}--Creating Log Folders...!\n')
         f.write(f'{time_now}--Success!!\n')
     else:
@@ -109,7 +107,7 @@ while True:
         f.write(f"{time_now}--Username Stored Successfully!\n")
         stored_password = create_password
         f.write(f"{time_now}--Password Stored Successfully!\n")
-        ########################################################################################################################
+        # #######################################################################################################################
         account_create = 'yes'
         f.write(f"{time_now}--Account Created 'Changing account created to 'yes''\n")
         f.write(f"{time_now}--Updating the server!\n")
@@ -283,9 +281,9 @@ while True:
                                     f.write(f"{time_now}--Player 1 WON The match\n")
                                 elif winner(board, "O"):
                                     gb.destroy()
-                                    box = messagebox.showinfo("Winner", "Player 2 won the match")
+                                    messagebox.showinfo("Winner", "Player 2 won the match")
                                     f.write(f"{time_now}--Player 2 WON The match\n")
-                                elif (isfull()):
+                                elif isfull():
                                     gb.destroy()
                                     box = messagebox.showinfo("Tie Game", "Tie Game")
                                     f.write(f"{time_now}--Tie game!\n")
@@ -375,7 +373,7 @@ while True:
                                 elif winner(board, "O"):
                                     gb.destroy()
                                     x = False
-                                    box = messagebox.showinfo("Winner", "Computer won the match")
+                                    messagebox.showinfo("Winner", "Computer won the match")
                                     f.write(f"{time_now}--Computer WON the match\n")
                                 elif (isfull()):
                                     gb.destroy()
@@ -528,7 +526,8 @@ while True:
                                 # Text
                                 text_area = tk.Text(master=window, height=12, width=30)
                                 text_area.grid(column=15, row=4)
-                                answer = "Your Choice: {uc} \nComputer's Choice : {cc} \n Your Score : {u} \n Computer Score : {c}  \n\n made by Matheesha Pathirana ".format(
+                                answer = "Your Choice: {uc} \nComputer's Choice : {cc} \n Your Score : {u} \n " \
+                                         "Computer Score : {c}  \n\n made by Matheesha Pathirana ".format(
                                     uc=USER_CHOICE, cc=COMP_CHOICE, u=USER_SCORE, c=COMP_SCORE,
                                     font=('arial', 24, 'bold'))
                                 text_area.insert(tk.END, answer)
