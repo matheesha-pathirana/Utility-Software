@@ -1,3 +1,4 @@
+import ast
 import os
 import datetime
 import shutil
@@ -591,7 +592,7 @@ while True:
                             def equalpress():
                                 try:
                                     global expression
-                                    total = str(eval(expression))
+                                    total = str(ast.literal_eval(expression))
                                     equation.set(total)
                                     expression = ""
                                 except:
