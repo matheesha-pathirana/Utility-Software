@@ -65,7 +65,7 @@ try:
 except ImportError:
     f.write(f"{time_now}--Time Module Not Found!\n")
     input(
-        f"Module time not installed, to install run 'pip install time' or \npress enter to install modules\n")
+        "Module time not installed, to install run 'pip install time' or \npress enter to install modules\n")
     if nointernet == 1:
         input('You need an internet connection to install\n')
         f.write(f"{time_now}--Couldn't Connect To The Internet!\n")
@@ -81,7 +81,7 @@ try:
 except ImportError:
     f.write(f"{time_now}--random2 Module Not Found!\n")
     input(
-        f"Module random2 not installed, to install run 'pip install random2 or'\nPress enter to install modules\n")
+        "Module random2 not installed, to install run 'pip install random2 or'\nPress enter to install modules\n")
     if nointernet == 1:
         input('You need an internet connection to install\n')
         f.write(f"{time_now}--Couldn't Connect To The Internet!\n")
