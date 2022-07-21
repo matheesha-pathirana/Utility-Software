@@ -3,7 +3,7 @@ import time
 import requests
 
 try:
-    import requests
+    pass
 except ImportError:
     os.system('pip install requests')
 

@@ -60,7 +60,6 @@ except requests.exceptions.ConnectionError:
     f.write(f"{time_now}--Couldn't Connect To The Server!\n")
 
 try:
-    import time
 
     f.write(f"{time_now}--Module Check PASS\n")
 except ImportError:
@@ -76,7 +75,6 @@ except ImportError:
         os.system('pip install time')
         f.write(f"{time_now}--Time Module installed succesfully\n")
 try:
-    import random2
 
     f.write(f"{time_now}--Module Check PASS\n")
 except ImportError:
@@ -200,8 +198,6 @@ while True:
                                 f.write(f"{time_now}--Connected to the Server successfully!\n")
                                 details = handler.getDetails(ip)
                                 f.write(f"{time_now}--printing IP Info\n")
-
-                                from datetime import datetime
 
                                 now = datetime.now()
                                 current_time = now.strftime("%H:%M:%S")
@@ -466,7 +462,6 @@ while True:
                         ########################################################################################################################
                         elif menu.lower() == '5':
                             f.write(f"{time_now}--Rock Paper Scissor Input Detected!\n")
-                            import random
                             import tkinter as tk
                             from PIL import Image, ImageTk
 
@@ -576,7 +571,6 @@ while True:
                             f.write(f"{time_now}--Calculator Input Detected!\n")
                             f.write(f"{time_now}--Loading Math Module and TK Module!\n")
                             f.write(f"{time_now}--Loaded Successfully!\n")
-                            from tkinter import *
 
                             expression = ""
 
