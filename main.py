@@ -484,7 +484,6 @@ while True:
                             label_image.grid(column=15, row=0)
                             f.write(f"{time_now}--Game is Lock and Loaded\n")
 
-                            # global variables
                             USER_SCORE = 0
                             COMP_SCORE = 0
                             USER_CHOICE = ""
@@ -689,43 +688,7 @@ while True:
                         ########################################################################################################################
                         elif menu.lower() == '7':
                             print("Coming Soon...")
-                            # f.write(f"{time_now}--Speed Test Input detected!\n")
-                            # url = "https://github.com"
-                            # try:
-                            #     response = requests.get(url)
-                            #     time.sleep(.4)
-                            #     f.write(f"{time_now}--Connecting To The server!\n")
-                            #     st = speedtest.speedtest()
-                            #     f.write(f"{time_now}--Connected!\n")
-                            #     f.write(f"{time_now}--Testing Speed!\n")
-                            #     option = int(input('''What speed do you want to test:
-                            #                                                                     1) Download Speed
-                            #                                                                     2) Upload Speed
-                            #                                                                     3) Ping
-                            #                                                                     Your Choice: '''))
-                            #
-                            #     if option == 1:
-                            #         print(st.download() / 1000000, "Mbps")
-                            #     elif option == 2:
-                            #         print(st.upload() / 1000000, "Mbps")
-                            #     elif option == 3:
-                            #         servernames = []
-                            #         st.get_servers(servernames)
-                            #         print(st.results.ping)
-                            #     else:
-                            #         print("Please enter the correct choice !")
-                            #         f.write(f"{time_now}--Invalid Choice!\n")
-                            #
-                            # except requests.exceptions.ConnectionError:
-                            #     nointernet = 1
-                            #     print("You Need an Internet Connection")
-                            #     f.write(f"{time_now}--No Internet Connection!\n")
-                        ########################################################################################################################
                         elif menu.lower() == 'x':
-                            # f.close()
-                            # shutil.move(
-                            #     f"D:/OneDrive - adithya/Programming/Python/Utility Software/log/Log_{today}_{rand_number}.txt",
-                            #     f"D:/Program Files (x86)/Cryptical/log/Log_{today}_{rand_number}/Log_{today}_{rand_number}")
                             exit()
                         ########################################################################################################################
                         else:
@@ -740,9 +703,6 @@ while True:
     elif login.lower() == 'x':
         f.write(f"{time_now}--Exiting!!!  "
                 "bye\n")
-        # f.close()
-        # shutil.move(f"D:/OneDrive - adithya/Programming/Python/Utility Software/log/Log_{today}_{rand_number}.txt",
-        #             f"D:/Program Files (x86)/Cryptical/log/Log_{today}_{rand_number}/Log_{today}_{rand_number}")
         exit()
     ########################################################################################################################
     else:
