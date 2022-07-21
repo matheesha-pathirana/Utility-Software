@@ -241,7 +241,7 @@ while True:
                             print(f'CPU Count - {cpu_count}')
                             f.write(f"{time_now}--CPU Count - {cpu_count}\n")
                             print(f'System Username - {system_owner}')
-                            f.write(f"{time_now}--\System Username - {system_owner}\n")
+                            f.write(rf"{time_now}--\System Username - {system_owner}\n")
                             f.write(f"{time_now}--Printing local info\n")
                             print("\n---More Information Coming Soon.---\n\n")
                             f.write(f"{time_now}--More Information coming soon\n")
