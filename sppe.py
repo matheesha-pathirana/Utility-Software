@@ -248,8 +248,6 @@ while True:
                         elif menu.lower() == '4':
                             f.write(f"{time_now}--Tic Tac Toe Input Detected!\n")
                             sign = 0
-
-                            global board
                             board = [[" " for x in range(3)] for y in range(3)]
 
 
