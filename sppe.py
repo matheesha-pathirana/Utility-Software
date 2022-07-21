@@ -1,5 +1,5 @@
 import os
-import datetime as datetime
+import datetime
 import shutil
 import random2
 import random
