@@ -125,7 +125,6 @@ while True:
                 f.write(f"{time_now}--Please Create an account before login!!\n")
                 time.sleep(2.3)
                 break
-                f.write(f"{time_now}--Re logging!\n")
 
             else:
                 login_username = input("\n\n~ Enter Your Username : ")
